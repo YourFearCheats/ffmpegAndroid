@@ -9,7 +9,7 @@ ARCH_LIST=("armv8a" "armv7a" "x86" "x86-64")
 
 ### Enable FFMPEG BUILD MODULES ####
 ENABLED_CONFIG="\
-		--enabl-small \
+		--enable-small \
 		--enable-avcodec \
 		--enable-avformat \
 		--enable-avutil \
