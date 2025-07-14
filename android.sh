@@ -13,24 +13,16 @@ ENABLED_CONFIG="\
 		--enable-avcodec \
 		--enable-avformat \
 		--enable-avutil \
-    		--enable-jni \
-      		--enable-mediacodec \
-  		--enable-demuxer=mov \
-    		--enable-demuxer=matroska \
-		--enable-parser=h264 \
-  		--enable-parser=aac \
-    		--enable-parser=hevc \
-  		--enable-decoder=h264 \
-    		--enable-decoder=aac \
-      		--enable-decoder=hevc \
-		--enable-decoder=opus \
-		--enable-shared "
+  		--enable-swscale \
+    		--enable-decoders \
+      		--enable-persers \
+		--enable-demuxers \
+		--enable-static "
 
 
 ### Disable FFMPEG BUILD MODULES ####
 DISABLED_CONFIG="\
 		--disable-zlib \
-  		--disable-swscale \
     		--disable-swresample \
  		--disable-avfilter \
 		--disable-v4l2-m2m \
@@ -39,7 +31,7 @@ DISABLED_CONFIG="\
 		--disable-libxml2 \
 		--disable-avdevice \
 		--disable-network \
-		--disable-static \
+		--disable-shared \
 		--disable-debug \
 		--disable-ffplay \
   		--disable-ffprobe \
