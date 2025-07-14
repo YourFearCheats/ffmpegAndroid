@@ -13,9 +13,9 @@ ENABLED_CONFIG="\
 		--enable-avformat \
 		--enable-avutil \
   		--enable-swscale \
-    		--enable-decoders \
-      		--enable-parsers
-		--enable-demuxers \
+    		--enable-demuxer=mov,matroska,avi,mpegts,flv,ogg,image2 \
+  		--enable-decoder=h264,hevc,mp3,aac,ac3,flac,opus,vorbis,ass,ssa,mov_text,png,jpeg,mjpeg \
+  		--enable-parser=h264,hevc,aac,ac3,flac,opus,vorbis \
 		--enable-static "
 
 
