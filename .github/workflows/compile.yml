@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      NDK_VERSION: r27c
+      NDK_VERSION: r28c
 
     steps:
     - name: Checkout repository
