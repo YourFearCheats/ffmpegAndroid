@@ -15,7 +15,7 @@ ENABLED_CONFIG="\
 		--enable-avutil \
   		--enable-swscale \
     		--enable-decoders \
-      		--enable-persers \
+      		--enable-parsers
 		--enable-demuxers \
 		--enable-static "
 
