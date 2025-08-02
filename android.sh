@@ -9,7 +9,6 @@ ARCH_LIST=("armv8a" "armv7a" "x86" "x86-64")
 
 ### Enable FFMPEG BUILD MODULES ####
 ENABLED_CONFIG="\
-		--enable-small \
 		--enable-avcodec \
 		--enable-avformat \
 		--enable-avutil \
@@ -22,6 +21,7 @@ ENABLED_CONFIG="\
 
 ### Disable FFMPEG BUILD MODULES ####
 DISABLED_CONFIG="\
+		--disable-small \
 		--disable-zlib \
     		--disable-swresample \
  		--disable-avfilter \
@@ -151,7 +151,7 @@ for ARCH in "${ARCH_LIST[@]}"; do
 	    EXTRA_CXXFLAGS="-O3 -march=$TARGET_CPU -fomit-frame-pointer"
             		
             EXTRA_CONFIG="\
-            		  "
+            		  --disable-asm "
             ;;
         "x86"|"i686")
             echo -e "\e[1;32m$ARCH Libraries\e[0m"
