@@ -151,7 +151,7 @@ for ARCH in "${ARCH_LIST[@]}"; do
 	    EXTRA_CXXFLAGS="-O3 -march=$TARGET_CPU -fomit-frame-pointer"
             		
             EXTRA_CONFIG="\
-	                    "
+	                 --disable-asm "
             ;;
         "x86"|"i686")
             echo -e "\e[1;32m$ARCH Libraries\e[0m"
