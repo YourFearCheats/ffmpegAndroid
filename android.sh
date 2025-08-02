@@ -31,7 +31,7 @@ DISABLED_CONFIG="\
 		--disable-libxml2 \
 		--disable-avdevice \
 		--disable-network \
-		--disable-static \
+		--disable-shared \
 		--disable-debug \
 		--disable-ffplay \
   		--disable-ffprobe \
