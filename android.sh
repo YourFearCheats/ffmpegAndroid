@@ -16,7 +16,7 @@ ENABLED_CONFIG="\
     		--enable-demuxer=mov,matroska,avi,mpegts,flv,ogg,image2,webm_dash_manifest,asf,m4v,mpegvideo,mp3,wav,aac,ac3,flac,webvtt \
 		--enable-decoder=h264,hevc,vp8,vp9,av1,mpeg4,wmv3,msmpeg4v2,msmpeg4v3,theora,dvvideo,h263,mjpeg,png,jpeg,bmp,webp,mp3,aac,ac3,eac3,flac,opus,vorbis,pcm_s16le,pcm_s24le,alac,wma,ass,ssa,mov_text,subrip,webvtt,dvbsub,dvdsub \
 		--enable-parser=h264,hevc,vp8,vp9,aac,ac3,eac3,flac,opus,vorbis,mpeg4video,mpegaudio \
-		--enable-shared "
+		--enable-static "
 
 
 ### Disable FFMPEG BUILD MODULES ####
@@ -151,7 +151,7 @@ for ARCH in "${ARCH_LIST[@]}"; do
 	    EXTRA_CXXFLAGS="-O3 -march=$TARGET_CPU -fomit-frame-pointer"
             		
             EXTRA_CONFIG="\
-            		  --disable-asm "
+	                    "
             ;;
         "x86"|"i686")
             echo -e "\e[1;32m$ARCH Libraries\e[0m"
